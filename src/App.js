@@ -8,20 +8,49 @@ const Root = styled.div`
   height: 100vh;
 `;
 
-const BannerSection = styled.div``;
+const BannerSection = styled.div`
+  width: 100%;
+  height: 608px;
+  background:linear-gradient(180deg, #020412 0%, #030619 100%), #020412;
+  color: #FCFCFF;
+
+  /* 
+  text-align:center;
+  display:flex;
+  flex-direction:column; 
+  */
+display:grid;
+place-items: center;
+
+
+`;
 
 const Logo = styled.img``;
 
 const Headline = styled.h1``;
 
-const Subtitle = styled.h3``;
+const Subtitle = styled.h3`
+color: #989DA0;
+`;
 
-const PrimaryButton = styled.button``;
+
+const PrimaryButton = styled.button`
+border-radius: 30px;
+background:#01B3D7;
+padding: 17px 97px;
+width:370px;
+height:53px;
+border: none;
+color:white;
+font-weight:bold;
+
+`;
 
 // Seção Nosso Trabalho ------------
 const OurWorkSection = styled.div`
   width: 100%;
   display: flex;
+
 `;
 
 const Title = styled.title``;
