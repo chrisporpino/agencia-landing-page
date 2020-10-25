@@ -48,23 +48,42 @@ font-weight:bold;
 
 // Seção Nosso Trabalho ------------
 const OurWorkSection = styled.div`
-  width: 100%;
-  display: flex;
+display: flex;
+flex-direction: row;
+flex-basis: 100%;
+flex: 1;
 
 `;
 
 const Title = styled.title``;
 
 const InformationsBox = styled.div`
-  width: 50%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ padding:30px;
+
+
 `;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
 
-const SecondaryButton = styled.button``;
+
+`;
+
+const SecondaryButton = styled.button`
+display:flex;
+flex-direction: column;
+
+`;
 
 const Image = styled.img`
-  width: 200px;
+  /* width: 200px; */
+  width:70%;
+  height: 70%;
+  object-fit: cover;
+  
 `;
 
 // Seção Por que nós? -----------
@@ -75,19 +94,47 @@ const DifferentialsBox = styled.div``;
 
 const Differential = styled.div``;
 
-const Text = styled.h3``;
+const Text = styled.h3`
+text-align: center;
+top: 60px;
+
+
+`;
 
 // Seção Quem somos -----------
 
-const AboutUs = styled.div``;
+const AboutUs = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 
-const CardsBox = styled.div``;
+`;
 
-const Card = styled.div``;
+
+const CardsBox = styled.div`
+display: flex;
+
+
+`;
+
+const Card = styled.div`
+
+padding-top:235px;
+width:270px;
+height:426px;
+background:#E3E4EA;
+border-radius: 4px;
+margin:165px 80px;
+
+
+`;
 
 const ProfilePicture = styled.img``;
 
-const DescriptionText = styled.p``;
+const DescriptionText = styled.p`
+padding-top: 20px;
+text-align: center;
+`;
 
 // Footer -----------
 const Footer = styled.footer``;
@@ -175,13 +222,13 @@ function App() {
           <Card>
             <ProfilePicture />
             <Text>Fulano da Silva</Text>
-            <p>Competências, Experiências Competências, Experiências</p>
+            <DescriptionText>Competências, Experiências Competências, Experiências</DescriptionText>
           </Card>
 
           <Card>
             <ProfilePicture />
             <Text>Ciclano da Silva</Text>
-            <p>Competências, Experiências Competências, Experiências</p>
+            <DescriptionText>Competências, Experiências Competências, Experiências</DescriptionText>
           </Card>
 
           <Card>
@@ -191,9 +238,10 @@ function App() {
               Competências, Experiências Competências, Experiências
             </DescriptionText>
           </Card>
+          <SecondaryButton>Quero um site</SecondaryButton>
         </CardsBox>
-        <SecondaryButton>Quero um site</SecondaryButton>
-      </AboutUs>
+        
+              </AboutUs>
 
       {/* --v---- Nova Seção ----v-- */}
       <Footer>
