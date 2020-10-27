@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "./assets/styles/global.css";
 import programmer from "./assets/images/illustration_programmer.png";
 
+
 const Root = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,6 +14,7 @@ const BannerSection = styled.div`
   height: 608px;
   background:linear-gradient(180deg, #020412 0%, #030619 100%), #020412;
   color: #FCFCFF;
+  font-family: 'Poppins', sans-serif;
 
   /* 
   text-align:center;
@@ -63,6 +65,11 @@ const InformationsBox = styled.div`
  align-items: flex-start;
  justify-content: center;
  padding:30px;
+ margin-left:135px;
+ margin-top: 104px;
+ margin-bottom : 116px;
+
+
 
 
 `;
@@ -71,6 +78,14 @@ const Paragraph = styled.p`
 
 
 `;
+
+
+// programmer=styled.img `
+// margin-right:
+// `; 
+
+
+
 
 const SecondaryButton = styled.button`
 display:flex;
@@ -81,16 +96,39 @@ flex-direction: column;
 const Image = styled.img`
   /* width: 200px; */
   width:70%;
-  height: 70%;
-  object-fit: cover;
+   object-fit: cover;
+   margin-top: 132px;
+   margin-right: 113px;
+   margin-left: 65px;
+   margin-bottom: 138px;
   
 `;
 
 // Seção Por que nós? -----------
-const WhyUsSection = styled.div``;
+const WhyUsSection = styled.div`
+
+width: 100%;
+height: 623px;
+left: 0px;
+top: 1186px;
+top: 1186px;
+background:linear-gradient(180deg, #020412 0%, #030619 100%), #020412;
+color: white;
+
+
+
+`;
 
 // Tittle já foi estilizado acima
-const DifferentialsBox = styled.div``;
+const DifferentialsBox = styled.div`
+display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(2, 1fr);
+align-items:center;
+justify-content: center;
+height: 100%;
+width: 100%;
+`;
 
 const Differential = styled.div``;
 
@@ -105,8 +143,9 @@ top: 60px;
 
 const AboutUs = styled.div`
 display: flex;
+flex-direction: column;
 flex-wrap: wrap;
-justify-content: center;
+align-items: center;
 
 `;
 
@@ -238,10 +277,10 @@ function App() {
               Competências, Experiências Competências, Experiências
             </DescriptionText>
           </Card>
-          <SecondaryButton>Quero um site</SecondaryButton>
         </CardsBox>
-        
-              </AboutUs>
+        <SecondaryButton>Quero um site</SecondaryButton>
+
+      </AboutUs>
 
       {/* --v---- Nova Seção ----v-- */}
       <Footer>
