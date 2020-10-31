@@ -9,6 +9,12 @@ import figma from "./assets/images/icons/figma.png";
 import chris from "./assets/images/Profile/Chris.jpeg";
 import carol from "./assets/images/Profile/Carol.jpeg";
 import victor from "./assets/images/Profile/Victor.jpg";
+import chart  from "./assets/images/tokiens/chart.png";
+import bulb   from "./assets/images/tokiens/bulb.png";
+import pencil from "./assets/images/tokiens/pencil.png";
+import users from "./assets/images/tokiens/users.png";
+
+
 
 const Root = styled.div`
   width: 100vw;
@@ -134,7 +140,7 @@ const Image = styled.img`
 // Seção Por que nós? -----------
 const WhyUsSection = styled.div`
   width: 100%;
-  height: 565px;
+  height: 650px;
   background: linear-gradient(180deg, #020412 0%, #030619 100%), #020412;
   color: white;
 `;
@@ -143,15 +149,19 @@ const WhyUsSection = styled.div`
 const DifferentialsBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  height: auto;
 `;
 
 const Differential = styled.div`
   width: 100%;
   height: auto;
   align-items: center;
+  display: flex;
+  padding-bottom: 30px;
 `;
 
 const DescriptionDifferential = styled.p`
@@ -172,7 +182,34 @@ const Text = styled.h3`
   height: 26px;
   line-height: 45px;
   margin-bottom: 24px;
+
 `;
+
+const DifferentialLogo = styled.div`
+width:100%
+height:auto;
+padding: 10px;
+border-radius: 70%;
+background:rgba(242, 243, 244, 0.05);
+margin-right: 30px;
+
+`;
+
+ const ImageDifferential = styled.img`
+ width: 40px;
+ align-items: center;
+ 
+ `;
+
+ const ImageDifferential1 = styled.img`
+ width: 40px;
+ align-items: center;
+ 
+ `;
+
+ const DivSuporte = styled.div ``;
+
+ 
 
 // Seção Quem somos -----------
 
@@ -215,6 +252,20 @@ const DescriptionSkills = styled.p`
   text-align: center;
   flex-wrap: wrap;
 `;
+
+const Text1 = styled.h3`
+text-align: center;
+font-weight: 600px;
+font-size: 30px;
+width: 198px;
+height: 26px;
+line-height: 45px;
+margin-bottom: 50px;
+flex-wrap: wrap;
+
+
+`;
+
 
 // Footer -----------
 
@@ -291,39 +342,65 @@ function App() {
 
         <DifferentialsBox>
           <Differential>
-            <img />
+            <DifferentialLogo>
+          <ImageDifferential1 src={pencil} alt="criatividade"/>
+          </DifferentialLogo>
+          <DivSuporte>
             <Text>Criatividade</Text>
-            <DescriptionDifferential>
+            
+                   
+             <DescriptionDifferential>
               É o que envolve nossa paixão por ideias. Criar, imaginar e
               inventar novas formas de apresentar o seu serviço/produto faz
               parte do jeito da nossa agência de comunicação ser.
             </DescriptionDifferential>
+            </DivSuporte>
+            
           </Differential>
+
+
           <Differential>
-            <img />
+          <DifferentialLogo>
+            <ImageDifferential src={chart} alt="chart"/>
+            </DifferentialLogo>
+            <DivSuporte>
             <Text>Resultados</Text>
             <DescriptionDifferential>
               A gente trabalha para ver acontecer. E dá retorno, viu? Nosso
               maior orgulho é acompanhar as conquistas de cada cliente.
             </DescriptionDifferential>
+            </DivSuporte>
+
           </Differential>
+
           <Differential>
-            <img />
+          <DifferentialLogo>
+            <ImageDifferential1 src={bulb} alt="bulb" />
+            </DifferentialLogo>
+            <DivSuporte>
             <Text>Estratégia</Text>
             <DescriptionDifferential>
               Somos estudiosos, sabia?E adoramos planejar. É assim que
               descobrimos quais os melhores caminhos para alcançar o seu
               objetivo.
             </DescriptionDifferential>
+            </DivSuporte>
           </Differential>
+
+
           <Differential>
-            <img />
+          <DifferentialLogo>
+            <ImageDifferential src={users} alt="users" />
+            </DifferentialLogo>
+            <DivSuporte>
             <Text>Integração</Text>
             <DescriptionDifferential>
               Juntos conseguimos soluções melhores. Entre uma área e outra, a
               gente se ajuda e é dessa cooperação que surgem as boas ideias.
             </DescriptionDifferential>
+            </DivSuporte>
           </Differential>
+
         </DifferentialsBox>
       </WhyUsSection>
 
@@ -336,7 +413,7 @@ function App() {
             <ProfilePicture>
               <ImageProfile src={chris} alt="Chris" />
             </ProfilePicture>
-            <Text>Christhopher Porpino</Text>
+            <Text1>Christhopher Porpino</Text1>
             <DescriptionSkills>
               Desenvolvedor Web Full Stack. Trabalha com as techs: JavaScript,
               TypeScript, SQL, React.js, Node.js e RestAPI.
@@ -347,7 +424,7 @@ function App() {
             <ProfilePicture>
               <ImageProfile src={carol} alt="Carol" />
             </ProfilePicture>
-            <Text>Carol Marçal</Text>
+            <Text1>Carolina Marçal </Text1>
             <DescriptionSkills>
               UI Designer com conhecimento em Grids, Hierarquia Visual,
               Tipografia e Contraste de Cores com planejamento na plataforma
@@ -359,7 +436,7 @@ function App() {
             <ProfilePicture>
               <ImageProfile src={victor} alt="Victor" />
             </ProfilePicture>
-            <Text>Victor Tarroni</Text>
+            <Text1>Victor Tarroni</Text1>
             <DescriptionSkills>
               Front End Developer aplicando seus conhecimentos de CSS, HTML e
               JavaScript com muita técnica e visão comercial. Tem pratica em SEO
