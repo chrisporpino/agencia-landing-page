@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/landingpage/static/css/main.285c2d55.chunk.css",
-    "main.js": "/landingpage/static/js/main.f8e7473d.chunk.js",
-    "main.js.map": "/landingpage/static/js/main.f8e7473d.chunk.js.map",
-    "runtime-main.js": "/landingpage/static/js/runtime-main.494a572f.js",
-    "runtime-main.js.map": "/landingpage/static/js/runtime-main.494a572f.js.map",
-    "static/js/2.085d34c3.chunk.js": "/landingpage/static/js/2.085d34c3.chunk.js",
-    "static/js/2.085d34c3.chunk.js.map": "/landingpage/static/js/2.085d34c3.chunk.js.map",
-    "index.html": "/landingpage/index.html",
-    "precache-manifest.2ed6c2411d2a6f32901674e557fb9e66.js": "/landingpage/precache-manifest.2ed6c2411d2a6f32901674e557fb9e66.js",
-    "service-worker.js": "/landingpage/service-worker.js",
-    "static/css/main.285c2d55.chunk.css.map": "/landingpage/static/css/main.285c2d55.chunk.css.map",
-    "static/js/2.085d34c3.chunk.js.LICENSE.txt": "/landingpage/static/js/2.085d34c3.chunk.js.LICENSE.txt",
-    "static/media/Carol.jpeg": "/landingpage/static/media/Carol.2375fe1d.jpeg",
-    "static/media/Chris.jpeg": "/landingpage/static/media/Chris.e2b67daf.jpeg",
-    "static/media/Victor.jpg": "/landingpage/static/media/Victor.9d8b120a.jpg",
-    "static/media/illustration_programmer.png": "/landingpage/static/media/illustration_programmer.f6c6bf7f.png"
+    "main.css": "/agencia-landing-page/static/css/main.285c2d55.chunk.css",
+    "main.js": "/agencia-landing-page/static/js/main.3cbda7b3.chunk.js",
+    "main.js.map": "/agencia-landing-page/static/js/main.3cbda7b3.chunk.js.map",
+    "runtime-main.js": "/agencia-landing-page/static/js/runtime-main.434d5a65.js",
+    "runtime-main.js.map": "/agencia-landing-page/static/js/runtime-main.434d5a65.js.map",
+    "static/js/2.416aaa5b.chunk.js": "/agencia-landing-page/static/js/2.416aaa5b.chunk.js",
+    "static/js/2.416aaa5b.chunk.js.map": "/agencia-landing-page/static/js/2.416aaa5b.chunk.js.map",
+    "index.html": "/agencia-landing-page/index.html",
+    "precache-manifest.f907cff71885e39b57b49f3aca78e3bd.js": "/agencia-landing-page/precache-manifest.f907cff71885e39b57b49f3aca78e3bd.js",
+    "service-worker.js": "/agencia-landing-page/service-worker.js",
+    "static/css/main.285c2d55.chunk.css.map": "/agencia-landing-page/static/css/main.285c2d55.chunk.css.map",
+    "static/js/2.416aaa5b.chunk.js.LICENSE.txt": "/agencia-landing-page/static/js/2.416aaa5b.chunk.js.LICENSE.txt",
+    "static/media/Carol.jpeg": "/agencia-landing-page/static/media/Carol.2375fe1d.jpeg",
+    "static/media/Chris.jpeg": "/agencia-landing-page/static/media/Chris.e2b67daf.jpeg",
+    "static/media/Victor.jpg": "/agencia-landing-page/static/media/Victor.9d8b120a.jpg",
+    "static/media/illustration_programmer.png": "/agencia-landing-page/static/media/illustration_programmer.f6c6bf7f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.494a572f.js",
-    "static/js/2.085d34c3.chunk.js",
+    "static/js/runtime-main.434d5a65.js",
+    "static/js/2.416aaa5b.chunk.js",
     "static/css/main.285c2d55.chunk.css",
-    "static/js/main.f8e7473d.chunk.js"
+    "static/js/main.3cbda7b3.chunk.js"
   ]
 }
