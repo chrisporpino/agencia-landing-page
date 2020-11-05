@@ -5,8 +5,10 @@ import programmer from "../../assets/images/illustration_programmer.png";
 const OurWorkSection = styled.div`
   display: flex;
   width: 100%;
-  height: 521px;
-  padding: 0 135px;
+  padding: 0 10vw;
+
+  @media (max-width: 700px) {
+  }
 `;
 
 const OurWorkTitle = styled.h1`
@@ -15,6 +17,12 @@ const OurWorkTitle = styled.h1`
   font-size: 38px;
   line-height: 46px;
   margin-bottom: 32px;
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 0;
+  }
 `;
 
 const InformationsBox = styled.div`
@@ -23,15 +31,27 @@ const InformationsBox = styled.div`
   align-items: flex-start;
   justify-content: center;
   width: 50%;
-  padding: 72px 0;
+  padding: 60px 0;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 56px 0;
+  }
 `;
 
 const DescriptionOurWork = styled.p`
   width: 100%;
-  height: 232px;
   font-size: 18px;
   line-height: 27px;
   color: #61616c;
+  margin-bottom: 24px;
+
+  @media (max-width: 700px) {
+    font-size: 15px;
+    line-height: 180.5%;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
 `;
 
 const SecondaryButton = styled.button`
@@ -40,11 +60,35 @@ const SecondaryButton = styled.button`
   background: #ffffff;
   border: 1px solid #03045e;
   border-radius: 30px;
+
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
   color: #03045e;
+
+  transition-duration: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(3, 4, 94, 0.2),
+    0 6px 20px 0 rgba(3, 4, 94, 0.19);
+
+  &:hover {
+    background: #555687;
+    color: #ffffff;
+    box-shadow: 0 6px 50px #555687;
+  }
+
+  &:active {
+    background: #f0f0ff;
+  }
+
+  @media (max-width: 700px) {
+    width: 160px;
+    height: 39px;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+  }
 `;
 
 const ImageSection = styled.div`
@@ -53,6 +97,10 @@ const ImageSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
