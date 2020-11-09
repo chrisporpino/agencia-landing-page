@@ -13,6 +13,7 @@ import chart from "./assets/images/tokiens/chart.png";
 import bulb from "./assets/images/tokiens/bulb.png";
 import pencil from "./assets/images/tokiens/pencil.png";
 import users from "./assets/images/tokiens/users.png";
+import "./assets/styles/mobile.css";
 
 const Root = styled.div`
   width: 100vw;
@@ -325,18 +326,18 @@ function App() {
       </OurWorkSection>
 
       {/* --v---- Nova Seção ----v-- */}
-      <WhyUsSection>
+      <WhyUsSection className="WhyUsSection">
         <Title>Por que nós?</Title>
 
-        <DifferentialsBox>
-          <Differential>
-            <DifferentialLogo>
+        <DifferentialsBox className="DifferentialBox">
+          <Differential className="Differential">
+            <DifferentialLogo className="DifferentialLogo">
               <ImageDifferential src={pencil} alt="criatividade" />
             </DifferentialLogo>
             <DivSuporte>
-              <Text>Criatividade</Text>
+              <Text className="Text">Criatividade</Text>
 
-              <DescriptionDifferential>
+              <DescriptionDifferential className="DescriptionDifferential">
                 É o que envolve nossa paixão por ideias. Criar, imaginar e
                 inventar novas formas de apresentar o seu serviço/produto faz
                 parte do jeito da nossa agência de comunicação ser.
@@ -344,26 +345,26 @@ function App() {
             </DivSuporte>
           </Differential>
 
-          <Differential>
-            <DifferentialLogo>
+          <Differential className="Differential">
+            <DifferentialLogo className="DifferentialLogo">
               <ImageDifferential src={chart} alt="chart" />
             </DifferentialLogo>
-            <DivSuporte>
-              <Text>Resultados</Text>
-              <DescriptionDifferential>
+            <DivSuporte className="DivSuporte">
+              <Text className="Text">Resultados</Text>
+              <DescriptionDifferential className="DescriptionDifferential">
                 A gente trabalha para ver acontecer. E dá retorno, viu? Nosso
                 maior orgulho é acompanhar as conquistas de cada cliente.
               </DescriptionDifferential>
             </DivSuporte>
           </Differential>
 
-          <Differential>
-            <DifferentialLogo>
+          <Differential className="Differential">
+            <DifferentialLogo className="DifferentialLogo">
               <ImageDifferential src={bulb} alt="bulb" />
             </DifferentialLogo>
-            <DivSuporte>
-              <Text>Estratégia</Text>
-              <DescriptionDifferential>
+            <DivSuporte className="DivSuporte">
+              <Text className="Text">Estratégia</Text>
+              <DescriptionDifferential className="DescriptionDifferential">
                 Somos estudiosos, sabia?E adoramos planejar. É assim que
                 descobrimos quais os melhores caminhos para alcançar o seu
                 objetivo.
@@ -371,13 +372,13 @@ function App() {
             </DivSuporte>
           </Differential>
 
-          <Differential>
-            <DifferentialLogo>
+          <Differential className="Differential">
+            <DifferentialLogo className="DifferentialLogo">
               <ImageDifferential src={users} alt="users" />
             </DifferentialLogo>
-            <DivSuporte>
-              <Text>Integração</Text>
-              <DescriptionDifferential>
+            <DivSuporte className="DivSuporte">
+              <Text className="Text">Integração</Text>
+              <DescriptionDifferential className="DescriptionDifferential">
                 Juntos conseguimos soluções melhores. Entre uma área e outra, a
                 gente se ajuda e é dessa cooperação que surgem as boas ideias.
               </DescriptionDifferential>
@@ -386,47 +387,50 @@ function App() {
         </DifferentialsBox>
       </WhyUsSection>
 
-      {/* --v---- Nova Seção ----v-- */}
-      <AboutUs>
-        <Title>Quem somos?</Title>
 
-        <CardsBox>
-          <Card>
-            <ProfilePicture>
+      
+
+      {/* --v---- Nova Seção ----v-- */}
+      <AboutUs className="AboutUs">
+        <Title className="Title">Quem somos?</Title>
+
+        <CardsBox className="CardsBox">
+          <Card className="Card">
+            <ProfilePicture className="ProfilePicture">
               <ImageProfile src={chris} alt="Chris" />
             </ProfilePicture>
-            <Text1>Christhopher Porpino</Text1>
-            <DescriptionSkills>
+            <Text1 className="Text1">Christhopher Porpino</Text1>
+            <DescriptionSkills className="DescriptionSkills">
               Desenvolvedor Web Full Stack. Trabalha com as techs: JavaScript,
               TypeScript, SQL, React.js, Node.js e RestAPI.
             </DescriptionSkills>
           </Card>
 
-          <Card>
-            <ProfilePicture>
+          <Card className="Card">
+            <ProfilePicture className="ProfilePicture">
               <ImageProfile src={carol} alt="Carol" />
             </ProfilePicture>
-            <Text1>Carolina Marçal </Text1>
-            <DescriptionSkills>
+            <Text1 className="Text1">Carolina Marçal </Text1>
+            <DescriptionSkills className="DescriptionSkills">
               UI Designer com conhecimento em Grids, Hierarquia Visual,
               Tipografia e Contraste de Cores com planejamento na plataforma
               Figma.
             </DescriptionSkills>
           </Card>
 
-          <Card>
-            <ProfilePicture>
+          <Card className="Card">
+            <ProfilePicture className="ProfilePicture">
               <ImageProfile src={victor} alt="Victor" />
             </ProfilePicture>
-            <Text1>Victor Tarroni</Text1>
-            <DescriptionSkills>
+            <Text1 className="Text1">Victor Tarroni</Text1>
+            <DescriptionSkills className="DescriptionSkills">
               Front End Developer aplicando seus conhecimentos de CSS, HTML e
               JavaScript com muita técnica e visão comercial. Tem pratica em SEO
               e conhecimento comercial.
             </DescriptionSkills>
           </Card>
         </CardsBox>
-        <SecondaryButton>QUERO UM SITE</SecondaryButton>
+        <SecondaryButton className="SecondaryButton">QUERO UM SITE</SecondaryButton>
       </AboutUs>
 
       {/* --v---- Nova Seção ----v-- */}
