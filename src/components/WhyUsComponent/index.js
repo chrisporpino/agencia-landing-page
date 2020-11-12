@@ -11,7 +11,11 @@ const WhyUsSection = styled.div`
   height: 650px;
   background: linear-gradient(180deg, #020412 0%, #030619 100%), #020412;
   color: white;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
   @media (max-width: 700px) {
     width: 100%;
     /* height: 1299px !impyarn startortant; */
@@ -51,7 +55,7 @@ const DifferentialsBox = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: auto;
+  max-width: 1440px;
 
   @media (max-width: 700px) {
     display: flex;
@@ -81,12 +85,11 @@ const Differential = styled.div`
 `;
 
 const DescriptionDifferential = styled.p`
-  width: 100%;
-  height: 66px;
+  width: 440px;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  margin-bottom: 51px;
+  margin-bottom: 40px;
 
   @media (max-width: 700px) {
     width: 100%;
@@ -119,11 +122,11 @@ const DifferentialLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   background: rgba(242, 243, 244, 0.05);
-  margin: 40px 32px 67px 135px;
+  margin: 40px 32px 67px 0;
 
   @media (max-width: 700px) {
     display: flex;
@@ -137,7 +140,6 @@ const DifferentialLogo = styled.div`
 
 const ImageDifferential = styled.img`
   width: 43px;
-  height: 43px;
 `;
 
 const DivSuporte = styled.div`
